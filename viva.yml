@@ -1,0 +1,21 @@
+version: 1
+assignment: no-reference
+
+goals:
+  - id: the-jitter
+    level: analyse
+    goal: >
+      Trace what your delays look like across a thousand clients that all
+      failed at the same instant, and work out what spreads them apart.
+
+  - id: the-cap
+    level: evaluate
+    goal: >
+      Judge where the ceiling on your delay belongs, and defend the number
+      against both a brief outage and one lasting an hour.
+
+  - id: what-is-retried
+    level: analyse
+    goal: >
+      Work out which failures your caller should hand to this at all, and which
+      will fail the same way however long it waits.
